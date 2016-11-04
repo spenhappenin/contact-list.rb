@@ -1,8 +1,9 @@
 require 'pry'
+require 'colorize'
 
 contact_list = ["Michael Scott", "Ronald Swanson", "Frank Reynolds", "Cosmo Kramer"]
 
-puts "What is your name?"
+puts "What is your name?".colorize(:blue)
 print "> "
 @name = gets.strip
 puts "Welcome to the ruby contact list, #{@name}!"
